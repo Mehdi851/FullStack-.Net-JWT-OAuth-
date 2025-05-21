@@ -2,6 +2,9 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import ValidateFrom from '../../helpers/ValidateForm';
+import { AuthService } from '../../services/auth.service';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -15,7 +18,7 @@ export class SignupComponent {
   isText:boolean=false;
   eyeIcon:string="fa-eye-slash";
   signupform!:FormGroup;
-  constructor(private fb:FormBuilder){}
+  constructor(private fb:FormBuilder,private auth:AuthService,private router:Router){}
 
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
@@ -39,6 +42,16 @@ export class SignupComponent {
 onSubmit(){
     if(this.signupform.valid){
       console.log(this.signupform.value)
+      this.auth.signUp(this.signupform.value).subscribe({
+        next:(res=>{
+          alert(res.message);
+          this.signupform.reset();
+          this.router.navigate(['login'])
+        }),
+        error:(err=>{
+          alert(err?.error.message)
+        })
+      })
     }
     else{
       console.log("Form is not valid");

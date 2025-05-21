@@ -1,12 +1,54 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "E:\\WorkSpace\\FulStack.Net\\FullStack-.Net-JWT-OAuth-\\AuthAPI\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6B597159-2205-46C9-8E75-60C2D39F2EFE}|AuthAPI\\AuthAPI.csproj|e:\\workspace\\fulstack.net\\fullstack-.net-jwt-oauth-\\authapi\\authapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B597159-2205-46C9-8E75-60C2D39F2EFE}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6B597159-2205-46C9-8E75-60C2D39F2EFE}|AuthAPI\\AuthAPI.csproj|e:\\workspace\\fulstack.net\\fullstack-.net-jwt-oauth-\\authapi\\authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6B597159-2205-46C9-8E75-60C2D39F2EFE}|AuthAPI\\AuthAPI.csproj|solutionrelative:authapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\WorkSpace\\FulStack.Net\\FullStack-.Net-JWT-OAuth-\\AuthAPI\\AuthAPI\\Program.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Program.cs",
+              "ToolTip": "E:\\WorkSpace\\FulStack.Net\\FullStack-.Net-JWT-OAuth-\\AuthAPI\\AuthAPI\\Program.cs",
+              "RelativeToolTip": "AuthAPI\\Program.cs",
+              "ViewState": "AgIAAAgAAAAAMDMzMzMbwCAAAACEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T05:58:20.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "E:\\WorkSpace\\FulStack.Net\\FullStack-.Net-JWT-OAuth-\\AuthAPI\\AuthAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "AuthAPI\\Controllers\\UserController.cs",
+              "ToolTip": "E:\\WorkSpace\\FulStack.Net\\FullStack-.Net-JWT-OAuth-\\AuthAPI\\AuthAPI\\Controllers\\UserController.cs*",
+              "RelativeToolTip": "AuthAPI\\Controllers\\UserController.cs*",
+              "ViewState": "AgIAABUAAAAAY2ZmZmYAwHUAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-16T04:11:55.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
