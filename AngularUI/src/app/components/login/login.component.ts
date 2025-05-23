@@ -45,8 +45,9 @@ export class LoginComponent {
         next:(res)=>{
           alert(res.message);
           this.loginForm.reset();
-          this.router.navigate(['dashboard'])
-
+          this.auth.storeToken(res.token);
+          this.router.navigate(['dashboard']);
+          console.log(this.auth.getToken());
         },
         error:(err)=>{
           alert(err?.error.message)

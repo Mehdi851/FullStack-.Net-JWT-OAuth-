@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace AuthAPI.Controllers
 {
@@ -113,6 +114,7 @@ namespace AuthAPI.Controllers
             return sb.ToString();
         }
 
+        [Authorize]
         [HttpGet("GetAllUser")]
         public async Task<ActionResult<User>> GetAllUsers()
         {
